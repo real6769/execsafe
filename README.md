@@ -12,7 +12,7 @@
 *   👨‍💻 **Bị hack máy tính do xem nhầm nhũng video đểu óc chó trên ybt?**
 *   🐌 **Tải nhầm file khiến nặng máy mà ko đc gì?**
 *   💲  **Hay những website fake bắt bạn mua hay lấy key để hack?**
-*   ⚙️ **Hay đơn giản là mấy cái executor hiện tại quá khó tải dùng đối với bạn?
+*   ⚙️ **Hay đơn giản là mấy cái executor hiện tại quá khó tải đối với bạn?**
 
 ### 🛡️ KHÔNG SAO CẢ, ĐÃ CÓ TÔI LO!
 Hiểu được những nỗi đau đó của anh em, tôi đã tích hợp sẵn đường link chính thức của các exec uy tín ngay trên trang web của tôi . 
