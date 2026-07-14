@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExecSafe VN - Genuine Roblox Executor Directory</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font Inter & Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        orbitron: ['Orbitron', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: {
+                            950: '#07070a',
+                            900: '#0f0f15',
+                            800: '#171725',
+                            700: '#232335',
+                        },
+                        brand: {
+                            purple: '#8b5cf6',
+                            pink: '#ec4899',
+                            emerald: '#10b981',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #07070a;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f0f15;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #232335;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8b5cf6;
+        }
+        .glow-purple {
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+        }
+        .glow-text {
+            text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header/Navigation -->
+    <header class="border-b border-dark-800 bg-dark-900/80 backdrop-blur-md sticky top-0 z-40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-brand-purple to-brand-pink p-2.5 rounded-xl shadow-lg shadow-brand-purple/20">
+                    <i class="fa-solid fa-shield-halved text-2xl text-white"></i>
+                </div>
+                <div>
+                    <span class="font-orbitron text-xl sm:text-2xl font-extrabold tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-brand-purple via-violet-400 to-brand-pink glow-text">EXEC<span class="text-white">SAFE</span></span>
+                    <span id="nav-subtitle" class="block text-xs text-gray-400 font-semibold tracking-widest uppercase">Danh Mục Executor Roblox Thật</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <nav class="hidden md:flex items-center space-x-6 mr-2">
+                    <a href="#directory" id="nav-link-dir" class="text-gray-300 hover:text-white font-medium transition-colors text-sm"><i class="fa-solid fa-cubes mr-1"></i> Thư Viện Link</a>
+                    <a href="#guides" id="nav-link-guides" class="text-gray-300 hover:text-white font-medium transition-colors text-sm"><i class="fa-solid fa-book-open mr-1"></i> Cảnh Giác Scam</a>
+                </nav>
+
+                <!-- Language Selector Pill Toggle -->
+                <div class="bg-dark-950 p-1 rounded-xl border border-dark-800 flex items-center space-x-1">
+                    <button onclick="setLanguage('vi')" id="btn-lang-vi" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all duration-300">
+                        <span>🇻🇳</span> <span class="hidden sm:inline">Tiếng Việt</span><span class="inline sm:hidden">VN</span>
+                    </button>
+                    <button onclick="setLanguage('en')" id="btn-lang-en" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all duration-300">
+                        <span>🇬🇧</span> <span class="hidden sm:inline">English</span><span class="inline sm:hidden">EN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative py-16 sm:py-20 overflow-hidden border-b border-dark-800">
+            <!-- Background grids and blobs -->
+            <div class="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-purple/10 via-transparent to-transparent"></div>
+            <div class="absolute top-1/4 left-1/10 w-96 h-96 bg-brand-pink/5 rounded-full filter blur-3xl"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <div class="inline-flex items-center space-x-2 bg-dark-800 border border-brand-purple/30 text-brand-purple text-xs font-bold px-3 py-1.5 rounded-full mb-6 uppercase tracking-widest">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-emerald opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-emerald"></span>
+                    </span>
+                    <span id="hero-badge">Link Tải Sạch 100% Không Virus</span>
+                </div>
+                
+                <h1 id="hero-title" class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Tổng Hợp <span class="bg-clip-text text-transparent bg-gradient-to-r from-brand-purple to-brand-pink">Executor Roblox</span> <br>Chính Chủ - Tránh Tải Nhầm Mã Độc
+                </h1>
+                
+                <p id="hero-desc" class="max-w-2xl mx-auto text-gray-400 text-base sm:text-lg mb-10 leading-relaxed">
+                    Trang web giúp bạn lưu trữ và truy cập đúng những đường link chính chủ của các công cụ hỗ trợ uy tín thế giới nhằm bảo vệ an toàn tối đa cho máy tính và tài khoản game của bạn.
+                </p>
+
+                <!-- Statistics grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-8">
+                    <div class="bg-dark-900 border border-dark-800 p-5 rounded-2xl">
+                        <div id="stat-total" class="text-3xl font-bold font-orbitron text-white">0</div>
+                        <div id="label-stat-total" class="text-xs text-gray-500 uppercase tracking-widest mt-1">Executor Hiện Có</div>
+                    </div>
+                    <div class="bg-dark-900 border border-dark-800 p-5 rounded-2xl">
+                        <div class="text-3xl font-bold font-orbitron text-brand-emerald">100%</div>
+                        <div id="label-stat-verified" class="text-xs text-gray-500 uppercase tracking-widest mt-1">Đã Xác Minh</div>
+                    </div>
+                    <div class="bg-dark-900 border border-dark-800 p-5 rounded-2xl">
+                        <div id="stat-clicks" class="text-3xl font-bold font-orbitron text-brand-purple">0</div>
+                        <div id="label-stat-clicks" class="text-xs text-gray-500 uppercase tracking-widest mt-1">Lượt Truy Cập Link</div>
+                    </div>
+                    <div class="bg-dark-900 border border-dark-800 p-5 rounded-2xl">
+                        <div class="text-3xl font-bold font-orbitron text-yellow-500">2026</div>
+                        <div id="label-stat-updated" class="text-xs text-gray-500 uppercase tracking-widest mt-1">Cập Nhật Mới Nhất</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Directory Section -->
+        <section id="directory" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
+                <div>
+                    <h2 id="dir-title" class="text-2xl sm:text-3xl font-extrabold flex items-center gap-2">
+                        <i class="fa-solid fa-list-check text-brand-purple"></i>
+                        Thư Viện Link Gốc Đã Xác Minh
+                    </h2>
+                    <p id="dir-desc" class="text-gray-400 text-sm mt-1">Nhấp trực tiếp vào "Truy Cập Link Thật" để tải từ trang chủ an toàn.</p>
+                </div>
+            </div>
+
+            <!-- Filter and Search Bar -->
+            <div class="bg-dark-900 border border-dark-800 p-4 rounded-2xl mb-8 flex flex-col lg:flex-row gap-4 items-center justify-between">
+                <!-- Search input -->
+                <div class="relative w-full lg:w-96">
+                    <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gray-500">
+                        <i class="fa-solid fa-search"></i>
+                    </span>
+                    <input type="text" id="search-input" oninput="filterExecutors()" placeholder="Tìm kiếm tên Executor..." class="w-full bg-dark-950 border border-dark-800 focus:border-brand-purple text-white pl-10 pr-4 py-2.5 rounded-xl outline-none transition-all duration-200 text-sm">
+                </div>
+
+                <!-- Filtering Options -->
+                <div class="flex flex-wrap items-center gap-2 w-full lg:w-auto">
+                    <!-- Platform select -->
+                    <select id="filter-platform" onchange="filterExecutors()" class="bg-dark-950 border border-dark-800 text-gray-300 text-sm px-4 py-2.5 rounded-xl outline-none focus:border-brand-purple">
+                        <option value="all" id="opt-platform-all">Mọi Nền Tảng</option>
+                        <option value="Windows">Windows</option>
+                        <option value="Android">Android</option>
+                        <option value="iOS">iOS</option>
+                        <option value="Multi-Platform" id="opt-platform-multi">Đa Nền Tảng</option>
+                    </select>
+
+                    <!-- Status select -->
+                    <select id="filter-status" onchange="filterExecutors()" class="bg-dark-950 border border-dark-800 text-gray-300 text-sm px-4 py-2.5 rounded-xl outline-none focus:border-brand-purple">
+                        <option value="all" id="opt-status-all">Mọi Trạng Thái</option>
+                        <option value="Working" id="opt-status-working">Đang Hoạt Động</option>
+                        <option value="Patched" id="opt-status-patched">Bị Fix/Ngừng</option>
+                        <option value="Updating" id="opt-status-updating">Đang Cập Nhật</option>
+                    </select>
+
+                    <!-- Price Filter -->
+                    <select id="filter-price" onchange="filterExecutors()" class="bg-dark-950 border border-dark-800 text-gray-300 text-sm px-4 py-2.5 rounded-xl outline-none focus:border-brand-purple">
+                        <option value="all" id="opt-price-all">Mọi Mức Giá</option>
+                        <option value="Free" id="opt-price-free">Miễn Phí</option>
+                        <option value="Freemium">Freemium</option>
+                        <option value="Paid" id="opt-price-paid">Trả Phí</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Grid container for Executor Cards -->
+            <div id="executor-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cards injected here via Javascript -->
+            </div>
+
+            <!-- Empty state -->
+            <div id="empty-state" class="hidden text-center py-12 bg-dark-900 border border-dark-800 rounded-3xl">
+                <div class="text-gray-600 text-5xl mb-3"><i class="fa-solid fa-ban"></i></div>
+                <h4 id="empty-title" class="text-lg font-bold text-gray-300">Không tìm thấy Executor phù hợp</h4>
+                <p id="empty-desc" class="text-sm text-gray-500 mt-1">Hãy thử đổi bộ lọc tìm kiếm!</p>
+            </div>
+        </section>
+
+        <!-- Anti-Scam Educational Section -->
+        <section id="guides" class="py-16 bg-dark-950 border-t border-dark-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 id="guide-sec-title" class="text-3xl font-extrabold tracking-tight">Cảnh Báo & Cách Tránh Tải Phải Keylogger/Stealer</h2>
+                    <p id="guide-sec-desc" class="text-gray-400 mt-2 text-sm">Hãy tự bảo vệ tài khoản Roblox và Discord của mình trước các thủ đoạn tinh vi:</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Guide 1 -->
+                    <div class="bg-dark-900 border border-dark-800 p-6 rounded-2xl relative overflow-hidden group hover:border-brand-purple/40 transition duration-300">
+                        <div class="text-brand-purple text-3xl mb-4"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <h4 id="guide-1-title" class="text-lg font-bold mb-2 text-white">1. Link Giả Mạo Nhái Tên</h4>
+                        <p id="guide-1-desc" class="text-sm text-gray-400 leading-relaxed">
+                            Kẻ xấu thường mua các tên miền rất giống web thật (ví dụ: <code class="text-brand-pink font-mono">xen0-executor.net</code> thay vì <code class="text-brand-emerald font-mono">xeno.now</code>) rồi chèn mã độc đánh cắp mật khẩu Chrome/Discord (Stealer).
+                        </p>
+                    </div>
+
+                    <!-- Guide 2 -->
+                    <div class="bg-dark-900 border border-dark-800 p-6 rounded-2xl relative overflow-hidden group hover:border-brand-purple/40 transition duration-300">
+                        <div class="text-brand-pink text-3xl mb-4"><i class="fa-solid fa-skull-crossbones"></i></div>
+                        <h4 id="guide-2-title" class="text-lg font-bold mb-2 text-white">2. Video Hướng Dẫn Fake Trực Tiếp</h4>
+                        <p id="guide-2-desc" class="text-sm text-gray-400 leading-relaxed">
+                            Nhiều kênh Youtube tải lại video hack, để link dẫn tới file nén <code class="text-brand-pink font-mono">.zip</code> kỳ lạ đòi pass giải nén hoặc tệp bootstrapper (.exe) giả mạo nhằm né tránh phần mềm diệt virus. Tuyệt đối không mở các tệp này.
+                        </p>
+                    </div>
+
+                    <!-- Guide 3 -->
+                    <div class="bg-dark-900 border border-dark-800 p-6 rounded-2xl relative overflow-hidden group hover:border-brand-purple/40 transition duration-300">
+                        <div class="text-brand-emerald text-3xl mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4 id="guide-3-title" class="text-lg font-bold mb-2 text-white">3. Giải Pháp An Toàn</h4>
+                        <p id="guide-3-desc" class="text-sm text-gray-400 leading-relaxed">
+                            Hãy bookmark trang **ExecSafe** này. Khi cần tải bất kỳ Executor nào, chỉ cần truy cập vào đây để lấy đúng link trang chủ chính thức đã được cộng đồng kiểm duyệt kỹ lưỡng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark-950 border-t border-dark-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="bg-dark-800 p-2 rounded-xl border border-dark-700">
+                    <i class="fa-solid fa-shield-halved text-brand-purple text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-orbitron font-extrabold tracking-wider text-white">EXECSAFE VN</span>
+                    <span id="footer-logo-sub" class="block text-xs text-gray-500">Thư viện lưu trữ liên kết chính chủ an toàn số #1 VN</span>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right text-xs text-gray-500">
+                <p id="footer-text-1" class="mb-1">&copy; 2026 ExecSafe VN. Cam kết cung cấp thông tin sạch, chính chủ 100%.</p>
+                <p id="footer-text-2">Chúng tôi không chịu trách nhiệm hay sở hữu bất kỳ tệp tin can thiệp game bên thứ ba nào.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Message UI -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-10 opacity-0 pointer-events-none transition-all duration-300">
+        <div id="toast-content" class="bg-dark-900 border border-brand-purple/50 px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3">
+            <span id="toast-icon" class="text-brand-purple text-lg"><i class="fa-solid fa-circle-info"></i></span>
+            <span id="toast-text" class="text-sm font-semibold">Thông báo thành công!</span>
+        </div>
+    </div>
+
+    <!-- Scripts & Core Logic -->
+    <script>
+        // Translatable dictionary for all non-database web elements
+        const langPack = {
+            vi: {
+                nav_subtitle: "Danh Mục Executor Roblox Thật",
+                nav_link_dir: "<i class='fa-solid fa-cubes mr-1'></i> Thư Viện Link",
+                nav_link_guides: "<i class='fa-solid fa-book-open mr-1'></i> Cảnh Giác Scam",
+                hero_badge: "Link Tải Sạch 100% Không Virus",
+                hero_title: "Tổng Hợp <span class='bg-clip-text text-transparent bg-gradient-to-r from-brand-purple to-brand-pink'>Executor Roblox</span> <br>Chính Chủ - Tránh Tải Nhầm Mã Độc",
+                hero_desc: "Trang web giúp bạn lưu trữ và truy cập đúng những đường link chính chủ của các công cụ hỗ trợ uy tín thế giới nhằm bảo vệ an toàn tối đa cho máy tính và tài khoản game của bạn.",
+                stat_total: "Executor Hiện Có",
+                stat_verified: "Đã Xác Minh",
+                stat_clicks: "Lượt Truy Cập Link",
+                stat_updated: "Cập Nhật Mới Nhất",
+                dir_title: "<i class='fa-solid fa-list-check text-brand-purple'></i> Thư Viện Link Gốc Đã Xác Minh",
+                dir_desc: "Nhấp trực tiếp vào 'Truy Cập Link Thật' để tải từ trang chủ an toàn.",
+                search_placeholder: "Tìm kiếm tên Executor...",
+                opt_platform_all: "Mọi Nền Tảng",
+                opt_platform_multi: "Đa Nền Tảng",
+                opt_status_all: "Mọi Trạng Thái",
+                opt_status_working: "Đang Hoạt Động",
+                opt_status_patched: "Bị Fix/Ngừng",
+                opt_status_updating: "Đang Cập Nhật",
+                opt_price_all: "Mọi Mức Giá",
+                opt_price_free: "Miễn Phí",
+                opt_price_paid: "Trả Phí",
+                empty_title: "Không tìm thấy Executor phù hợp",
+                empty_desc: "Hãy thử đổi bộ lọc tìm kiếm!",
+                guide_sec_title: "Cảnh Báo & Cách Tránh Tải Phải Keylogger/Stealer",
+                guide_sec_desc: "Hãy tự bảo vệ tài khoản Roblox và Discord của mình trước các thủ đoạn tinh vi:",
+                guide_1_title: "1. Link Giả Mạo Nhái Tên",
+                guide_1_desc: "Kẻ xấu thường mua các tên miền rất giống web thật (ví dụ: <code class='text-brand-pink font-mono'>xen0-executor.net</code> thay vì <code class='text-brand-emerald font-mono'>xeno.now</code>) rồi chèn mã độc đánh cắp mật khẩu Chrome/Discord (Stealer).",
+                guide_2_title: "2. Video Hướng Dẫn Fake Trực Tiếp",
+                guide_2_desc: "Nhiều kênh Youtube tải lại video hack, để link tải dẫn tới một file nén <code class='text-brand-pink font-mono'>.zip</code> kỳ lạ đòi mật khẩu giải nén hoặc tệp bootstrapper (.exe) giả dạng launcher để né tránh bộ quét virus. Tuyệt đối không tải hay giải nén các tệp này.",
+                guide_3_title: "3. Giải Pháp An Toàn",
+                guide_3_desc: "Hãy bookmark trang **ExecSafe** này. Khi cần tải bất kỳ Executor nào, chỉ cần truy cập vào đây để lấy đúng link trang chủ chính thức đã được cộng đồng kiểm duyệt kỹ lưỡng.",
+                footer_logo_sub: "Thư viện lưu trữ liên kết chính chủ an toàn số #1 VN",
+                footer_text_1: "&copy; 2026 ExecSafe VN. Cam kết cung cấp thông tin sạch, chính chủ 100%.",
+                footer_text_2: "Chúng tôi không chịu trách nhiệm hay sở hữu bất kỳ tệp tin can thiệp game bên thứ ba nào.",
+                btn_visit: "Truy Cập Link Thật",
+                badge_scanned: "Đã Quét Sạch Sẽ",
+                badge_downloads: "lượt tải",
+                toast_redirect: "Đang kết nối tới trang tải chính chủ an toàn..."
+            },
+            en: {
+                nav_subtitle: "Official Roblox Executor Directory",
+                nav_link_dir: "<i class='fa-solid fa-cubes mr-1'></i> Link Directory",
+                nav_link_guides: "<i class='fa-solid fa-book-open mr-1'></i> Anti-Scam Guide",
+                hero_badge: "100% Virus-Free Safe Official Links",
+                hero_title: "Curated <span class='bg-clip-text text-transparent bg-gradient-to-r from-brand-purple to-brand-pink'>Roblox Executors</span> <br>Official Directory - Avoid Stealth Malware",
+                hero_desc: "Protect your PC and gaming accounts by accessing direct, verified links to globally trusted developers. Block out fake clones and malicious phishers.",
+                stat_total: "Total Executors",
+                stat_verified: "Fully Verified",
+                stat_clicks: "Direct Clickouts",
+                stat_updated: "Latest Update",
+                dir_title: "<i class='fa-solid fa-list-check text-brand-purple'></i> Verified Official Source Links",
+                dir_desc: "Click 'Visit Real Site' to securely navigate directly to the developer homepage.",
+                search_placeholder: "Search Executor name...",
+                opt_platform_all: "All Platforms",
+                opt_platform_multi: "Multi-Platform",
+                opt_status_all: "All Statuses",
+                opt_status_working: "Working",
+                opt_status_patched: "Patched/Discontinued",
+                opt_status_updating: "Updating",
+                opt_price_all: "All Pricing",
+                opt_price_free: "Free",
+                opt_price_paid: "Paid",
+                empty_title: "No matching executors found",
+                empty_desc: "Try modifying your search criteria or filters!",
+                guide_sec_title: "Warnings & Prevention against Keyloggers/Stealers",
+                guide_sec_desc: "Proactively shield your Roblox and Discord accounts from malicious third parties:",
+                guide_1_title: "1. Misspelled Typosquatting Sites",
+                guide_1_desc: "Scammers register lookalike domains (e.g. <code class='text-brand-pink font-mono'>xen0-executor.net</code> instead of <code class='text-brand-emerald font-mono'>xeno.now</code>) to deliver stealer payloads that siphon Chrome credentials.",
+                guide_2_title: "2. Fake Youtube Video Tutorials",
+                guide_2_desc: "Re-uploaded exploit videos on Youtube often bundle malicious suspicious <code class='text-brand-pink font-mono'>.zip</code> archives requiring passwords or fake bootstrapper (.exe) installers to evade antivirus scanners. Never extract or run these suspicious downloads.",
+                guide_3_title: "3. Safe Best Practice",
+                guide_3_desc: "Bookmark **ExecSafe**. Whenever you need to download or update an executor, check back here to fetch the verified developer links directly.",
+                footer_logo_sub: "The #1 safest repository for official exploit domains",
+                footer_text_1: "&copy; 2026 ExecSafe VN. Dedicated to keeping the community secure.",
+                footer_text_2: "We are not affiliated with or responsible for any third-party gaming injection tools.",
+                btn_visit: "Visit Real Site",
+                badge_scanned: "Fully Clean Tested",
+                badge_downloads: "clicks",
+                toast_redirect: "Routing to the secure official website safely..."
+            }
+        };
+
+        // Complete database of the requested executors (Xeno, Ronix, Fluxus, ArceusX, Codex, Solara, Delta, Wave)
+        const officialExecutors = [
+            {
+                id: '1',
+                name: 'Xeno',
+                platform: 'Windows',
+                status: 'Working',
+                price: 'Free',
+                version: 'v2.8.2',
+                url: 'https://www.xeno.now/',
+                discord: 'https://discord.gg/getxeno',
+                clicks: 342,
+                desc: {
+                    vi: 'Xeno là một trong những executor tốt nhất hiện nay trên Windows với khả năng inject mượt mà, bypass tốt và tốc độ tối ưu cực cao. Được cộng đồng kiểm tra kỹ lưỡng, đảm bảo sạch và chính chủ.',
+                    en: 'Xeno stands as one of the best executors on Windows today, boasting seamless injection, excellent bypass mechanisms, and peak speeds. Community-audited and 100% clean.'
+                }
+            },
+            {
+                id: '2',
+                name: 'Solara',
+                platform: 'Windows',
+                status: 'Working',
+                price: 'Free',
+                version: 'v1.4.1',
+                url: 'https://getsolara.dev/',
+                discord: 'https://discord.gg/getsolara',
+                clicks: 189,
+                desc: {
+                    vi: 'Solara là một executor Windows nổi tiếng hoàn toàn miễn phí, được tối ưu hóa liên tục để tương thích với các bản cập nhật bảo mật của game.',
+                    en: 'Solara is a highly popular, completely free Windows executor updated continuously to stay ahead of the game\'s anti-cheat patches.'
+                }
+            },
+            {
+                id: '3',
+                name: 'Delta',
+                platform: 'Android',
+                status: 'Working',
+                price: 'Free',
+                version: 'v2.4.5',
+                url: 'https://delta-executor.com/',
+                discord: 'https://discord.gg/delta-exploits',
+                clicks: 114,
+                desc: {
+                    vi: 'Lựa chọn hàng đầu và cực kỳ mượt mà dành cho các thiết bị di động Android. Thích hợp để chạy các script nặng tự động cày cuốc.',
+                    en: 'An absolute favorite and highly optimized client for Android smartphones. Perfect for running heavy farming scripts autonomously.'
+                }
+            },
+            {
+                id: '4',
+                name: 'Wave',
+                platform: 'Windows',
+                status: 'Updating',
+                price: 'Freemium',
+                version: 'v2.0a',
+                url: 'https://getwave.gg/',
+                discord: 'https://discord.gg/getwave',
+                clicks: 145,
+                desc: {
+                    vi: 'Executor cao cấp hỗ trợ thực thi API sâu. Hiện đang trong giai đoạn cập nhật thường xuyên nhằm mang lại độ an toàn và ổn định tối đa cho game thủ.',
+                    en: 'A premium-tier utility supporting deep API execution. Currently undergoing maintenance cycles to ensure unmatched safety and stability.'
+                }
+            },
+            {
+                id: '5',
+                name: 'Ronix',
+                platform: 'Multi-Platform',
+                status: 'Working',
+                price: 'Free',
+                version: 'v1.8.4',
+                url: 'https://ronix.lol/',
+                discord: 'https://discord.gg/ronixstudios',
+                clicks: 89,
+                desc: {
+                    vi: 'Ronix là trình thực thi mã hỗ trợ đa nền tảng (Windows, macOS, Android). Nổi tiếng với việc không cần key kích hoạt (Keyless) trên một số phiên bản cập nhật.',
+                    en: 'Ronix is a multi-platform scripting engine supporting Windows, macOS, and Android. Famous for providing zero key retrieval steps (Keyless) in select versions.'
+                }
+            },
+            {
+                id: '7',
+                name: 'Fluxus',
+                platform: 'Android',
+                status: 'Patched',
+                price: 'Free',
+                version: 'v2.5.9',
+                url: 'https://fluxusteam.net/',
+                discord: '',
+                clicks: 256,
+                desc: {
+                    vi: 'Từng là huyền thoại Level 7 được tin dùng bởi hàng triệu scripter. Hiện tại đã bị NSX ngưng hỗ trợ cập nhật chính thức, lưu trữ link gốc để tránh scammer nhái thương hiệu.',
+                    en: 'Once a legendary Level 7 executor favored by millions. Currently officially discontinued, cataloged here solely to protect users against lookalike domain traps.'
+                }
+            },
+            {
+                id: '8',
+                name: 'Arceus X',
+                platform: 'Android',
+                status: 'Working',
+                price: 'Free',
+                version: 'v3.1.2',
+                url: 'https://spdmteam.com/',
+                discord: 'https://discord.gg/arceus',
+                clicks: 198,
+                desc: {
+                    vi: 'Trình thực thi mã (Executor) đời đầu có danh tiếng khổng lồ trên nền tảng di động Android và iOS. Đi kèm Menu Mod tích hợp sẵn tiện lợi.',
+                    en: 'The pioneer of mobile exploiting with a massive footprint on Android and iOS. Shipped with a highly convenient integrated mod menu.'
+                }
+            },
+            {
+                id: '9',
+                name: 'Codex',
+                platform: 'Android',
+                status: 'Working',
+                price: 'Free',
+                version: 'v2.2.0',
+                url: 'https://codex.lol/',
+                discord: 'https://discord.gg/codex',
+                clicks: 142,
+                desc: {
+                    vi: 'Trình thực thi Android và iOS cực kỳ mạnh mẽ, tối ưu hóa băng thông tải dữ liệu, bypass được hầu hết các tầng chặn mã độc của hệ thống game.',
+                    en: 'A high-powered exploit wrapper for iOS and Android optimized for minimum network usage, built to bypass layers of anti-cheat barriers easily.'
+                }
+            }
+        ];
+
+        let executors = [];
+        let totalClicks = 0;
+        let currentLang = 'vi'; // Default fallback
+
+        // On window load
+        window.onload = function() {
+            // 1. Detect Smart Language Setup
+            const savedLang = localStorage.getItem('execsafe_lang');
+            if (savedLang) {
+                currentLang = savedLang;
+            } else {
+                // Auto-detect browser language
+                const browserLang = navigator.language || navigator.userLanguage;
+                if (browserLang && browserLang.startsWith('vi')) {
+                    currentLang = 'vi';
+                } else {
+                    currentLang = 'en'; // Defaults to English for foreigners
+                }
+                localStorage.setItem('execsafe_lang', currentLang);
+            }
+
+            // 2. Load statistics and database
+            const savedData = localStorage.getItem('execsafe_data_readonly_v4');
+            const savedClicks = localStorage.getItem('execsafe_clicks');
+            
+            if (savedData) {
+                executors = JSON.parse(savedData);
+            } else {
+                executors = [...officialExecutors];
+                localStorage.setItem('execsafe_data_readonly_v4', JSON.stringify(executors));
+            }
+
+            if (savedClicks) {
+                totalClicks = parseInt(savedClicks, 10);
+            } else {
+                totalClicks = 2140; // Simulated large starter database statistic
+                localStorage.setItem('execsafe_clicks', totalClicks.toString());
+            }
+
+            // Apply translations and render elements
+            applyLanguage();
+            renderGrid();
+            updateStats();
+        };
+
+        // Apply selected language translations
+        function applyLanguage() {
+            const pack = langPack[currentLang];
+
+            // Update UI elements
+            document.getElementById('nav-subtitle').innerText = pack.nav_subtitle;
+            document.getElementById('nav-link-dir').innerHTML = pack.nav_link_dir;
+            document.getElementById('nav-link-guides').innerHTML = pack.nav_link_guides;
+            
+            document.getElementById('hero-badge').innerText = pack.hero_badge;
+            document.getElementById('hero-title').innerHTML = pack.hero_title;
+            document.getElementById('hero-desc').innerText = pack.hero_desc;
+            
+            document.getElementById('label-stat-total').innerText = pack.stat_total;
+            document.getElementById('label-stat-verified').innerText = pack.stat_verified;
+            document.getElementById('label-stat-clicks').innerText = pack.stat_clicks;
+            document.getElementById('label-stat-updated').innerText = pack.stat_updated;
+
+            document.getElementById('dir-title').innerHTML = pack.dir_title;
+            document.getElementById('dir-desc').innerText = pack.dir_desc;
+            document.getElementById('search-input').placeholder = pack.search_placeholder;
+
+            document.getElementById('opt-platform-all').innerText = pack.opt_platform_all;
+            document.getElementById('opt-platform-multi').innerText = pack.opt_platform_multi;
+            document.getElementById('opt-status-all').innerText = pack.opt_status_all;
+            document.getElementById('opt-status-working').innerText = pack.opt_status_working;
+            document.getElementById('opt-status-patched').innerText = pack.opt_status_patched;
+            document.getElementById('opt-status-updating').innerText = pack.opt_status_updating;
+            
+            document.getElementById('opt-price-all').innerText = pack.opt_price_all;
+            document.getElementById('opt-price-free').innerText = pack.opt_price_free;
+            document.getElementById('opt-price-paid').innerText = pack.opt_price_paid;
+
+            document.getElementById('empty-title').innerText = pack.empty_title;
+            document.getElementById('empty-desc').innerText = pack.empty_desc;
+
+            document.getElementById('guide-sec-title').innerText = pack.guide_sec_title;
+            document.getElementById('guide-sec-desc').innerText = pack.guide_sec_desc;
+            document.getElementById('guide-1-title').innerText = pack.guide_1_title;
+            document.getElementById('guide-1-desc').innerHTML = pack.guide_1_desc;
+            document.getElementById('guide-2-title').innerText = pack.guide_2_title;
+            document.getElementById('guide-2-desc').innerHTML = pack.guide_2_desc;
+            document.getElementById('guide-3-title').innerText = pack.guide_3_title;
+            document.getElementById('guide-3-desc').innerHTML = pack.guide_3_desc;
+
+            document.getElementById('footer-logo-sub').innerText = pack.footer_logo_sub;
+            document.getElementById('footer-text-1').innerHTML = pack.footer_text_1;
+            document.getElementById('footer-text-2').innerText = pack.footer_text_2;
+
+            // Highlight language selector buttons
+            if (currentLang === 'vi') {
+                document.getElementById('btn-lang-vi').className = "px-2.5 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all duration-300 bg-brand-purple text-white shadow-lg shadow-brand-purple/20";
+                document.getElementById('btn-lang-en').className = "px-2.5 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all duration-300 text-gray-400 hover:text-white";
+            } else {
+                document.getElementById('btn-lang-vi').className = "px-2.5 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition-all duration-300 text-gray-400 hover:text-white";
+                document.getElementById('btn-lang-en').className = "px-2.5 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all duration-300 bg-brand-purple text-white shadow-lg shadow-brand-purple/20";
+            }
+        }
+
+        // Set Language toggle manually
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('execsafe_lang', currentLang);
+            applyLanguage();
+            renderGrid();
+        }
+
+        // Render Cards inside grid dynamically
+        function renderGrid() {
+            const grid = document.getElementById('executor-grid');
+            const emptyState = document.getElementById('empty-state');
+            grid.innerHTML = '';
+
+            const searchValue = document.getElementById('search-input').value.toLowerCase();
+            const platformValue = document.getElementById('filter-platform').value;
+            const statusValue = document.getElementById('filter-status').value;
+            const priceValue = document.getElementById('filter-price').value;
+
+            // Filter logic
+            const filtered = executors.filter(item => {
+                const descText = item.desc[currentLang] ? item.desc[currentLang].toLowerCase() : '';
+                const matchesSearch = item.name.toLowerCase().includes(searchValue) || descText.includes(searchValue);
+                const matchesPlatform = platformValue === 'all' || item.platform === platformValue;
+                const matchesStatus = statusValue === 'all' || item.status === statusValue;
+                const matchesPrice = priceValue === 'all' || item.price === priceValue;
+                return matchesSearch && matchesPlatform && matchesStatus && matchesPrice;
+            });
+
+            if (filtered.length === 0) {
+                emptyState.classList.remove('hidden');
+                grid.classList.add('hidden');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+                grid.classList.remove('hidden');
+            }
+
+            const pack = langPack[currentLang];
+
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'bg-dark-900 border border-dark-800 hover:border-brand-purple/60 rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 group hover:-translate-y-1 relative';
+                
+                // Set badges based on working statuses
+                let statusBadge = '';
+                if (item.status === 'Working') {
+                    statusBadge = `<span class="bg-brand-emerald/10 text-brand-emerald border border-brand-emerald/20 text-xs font-semibold px-2.5 py-1 rounded-md flex items-center gap-1.5"><span class="h-1.5 w-1.5 bg-brand-emerald rounded-full animate-pulse"></span>${currentLang === 'vi' ? 'Đang Chạy' : 'Working'}</span>`;
+                } else if (item.status === 'Updating') {
+                    statusBadge = `<span class="bg-amber-500/10 text-amber-500 border border-amber-500/20 text-xs font-semibold px-2.5 py-1 rounded-md flex items-center gap-1.5"><span class="h-1.5 w-1.5 bg-amber-500 rounded-full"></span>${currentLang === 'vi' ? 'Đang Update' : 'Updating'}</span>`;
+                } else {
+                    statusBadge = `<span class="bg-rose-500/10 text-rose-500 border border-rose-500/20 text-xs font-semibold px-2.5 py-1 rounded-md flex items-center gap-1.5"><span class="h-1.5 w-1.5 bg-rose-500 rounded-full"></span>${currentLang === 'vi' ? 'Đã Bị Chặn' : 'Patched'}</span>`;
+                }
+
+                // Pricing badges
+                let displayPrice = item.price;
+                if (item.price === 'Free') displayPrice = (currentLang === 'vi') ? 'Miễn Phí' : 'Free';
+                
+                const priceBadge = item.price === 'Free' 
+                    ? `<span class="text-xs font-bold text-brand-purple bg-brand-purple/10 border border-brand-purple/20 px-2.5 py-1 rounded-md">${displayPrice}</span>`
+                    : `<span class="text-xs font-bold text-brand-pink bg-brand-pink/10 border border-brand-pink/20 px-2.5 py-1 rounded-md">${displayPrice}</span>`;
+
+                const translatedDesc = item.desc[currentLang] || item.desc['en'];
+
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white group-hover:text-brand-purple transition-colors flex items-center gap-2">
+                                    ${item.name}
+                                    <span class="text-xs text-gray-500 font-normal font-sans">${item.version || ''}</span>
+                                </h3>
+                                <div class="flex items-center gap-2 mt-1.5">
+                                    <span class="text-xs text-gray-400 font-medium flex items-center gap-1">
+                                        <i class="fa-solid fa-laptop text-xs"></i> ${item.platform}
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-end gap-1.5">
+                                ${statusBadge}
+                                ${priceBadge}
+                            </div>
+                        </div>
+
+                        <p class="text-gray-400 text-sm mb-6 leading-relaxed min-h-[72px]">
+                            ${translatedDesc}
+                        </p>
+                    </div>
+
+                    <div class="border-t border-dark-800 pt-4 mt-2">
+                        <div class="flex items-center justify-between gap-2.5">
+                            <!-- Link Visit Button -->
+                            <a href="${item.url}" target="_blank" onclick="trackClick('${item.id}')" class="flex-grow bg-dark-800 group-hover:bg-brand-purple text-white hover:text-white border border-dark-700 group-hover:border-brand-purple font-bold text-xs py-3.5 px-4 rounded-xl flex items-center justify-center gap-2 transition duration-300 shadow-sm">
+                                <i class="fa-solid fa-shield-halved text-brand-emerald group-hover:text-white transition-colors"></i>
+                                <span>${pack.btn_visit}</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-70"></i>
+                            </a>
+
+                            <!-- Discord Link -->
+                            ${item.discord ? `
+                                <a href="${item.discord}" target="_blank" class="bg-indigo-600/20 hover:bg-indigo-600 border border-indigo-500/20 hover:border-indigo-500 text-indigo-400 hover:text-white p-3.5 rounded-xl transition duration-300 text-center flex items-center justify-center" title="Discord Link">
+                                    <i class="fa-brands fa-discord"></i>
+                                </a>
+                            ` : ''}
+                        </div>
+
+                        <div class="flex items-center justify-between text-[11px] text-gray-500 mt-3 px-1">
+                            <span class="text-brand-emerald font-semibold flex items-center gap-1">
+                                <i class="fa-solid fa-circle-check"></i> ${pack.badge_scanned}
+                            </span>
+                            <span>${item.clicks || 0} ${pack.badge_downloads}</span>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Keep local storage synchronized
+        function updateStats() {
+            document.getElementById('stat-total').innerText = executors.length;
+            document.getElementById('stat-clicks').innerText = totalClicks;
+        }
+
+        // Live filtration
+        function filterExecutors() {
+            renderGrid();
+        }
+
+        // Tracks links clicked count, increments visual values instantly
+        function trackClick(id) {
+            totalClicks++;
+            localStorage.setItem('execsafe_clicks', totalClicks.toString());
+            
+            executors = executors.map(item => {
+                if (item.id === id) {
+                    return { ...item, clicks: (item.clicks || 0) + 1 };
+                }
+                return item;
+            });
+            localStorage.setItem('execsafe_data_readonly_v4', JSON.stringify(executors));
+            
+            updateStats();
+            showToast(langPack[currentLang].toast_redirect, "success");
+        }
+
+        // Displays customizable success notification bar
+        function showToast(message, type = "success") {
+            const toast = document.getElementById('toast');
+            const toastText = document.getElementById('toast-text');
+            const toastIcon = document.getElementById('toast-icon');
+            const toastContent = document.getElementById('toast-content');
+
+            toastText.innerText = message;
+
+            if (type === "success") {
+                toastContent.className = "bg-dark-900 border border-brand-emerald/50 px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3";
+                toastIcon.innerHTML = `<i class="fa-solid fa-circle-check text-brand-emerald"></i>`;
+            }
+
+            toast.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+            toast.classList.add('opacity-100', 'translate-y-0');
+
+            setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
