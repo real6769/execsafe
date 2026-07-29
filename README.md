@@ -21,4 +21,10 @@ Hiểu được những nỗi đau đó của anh em, tôi đã tích hợp sẵ
 
 ---
 
+📢SẮP UPDATE WEB 
+* 📟 **Thêm mới 12 executor siêu sịn**
+* 🔨 **Sửa lại những link bị lỗi hoặc sai**
+                                                                    ✨13h 29/7 sẽ hoàn thành cập nhật✨
+---  
+
 💖 *Cảm ơn bạn rất nhiều vì đã tin tưởng sử dụng trang web của tôi. Chúc anh em có những trải nghiệm leo rank, hack game thật mượt mà và an toàn!*
